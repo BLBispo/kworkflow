@@ -286,6 +286,13 @@ function kw()
         vm_main "$@"
       )
       ;;
+    tag)
+      (
+        include "${KW_LIB_DIR}/tag.sh"
+
+        tag_main "$@"
+      )
+      ;;
     version | --version | -v)
       (
         include "${KW_LIB_DIR}/help.sh"
